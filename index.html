@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG Cake Shop</title>
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ShowBanners()">
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="" class="logo"><img src="./logo.png" alt=""></a>
+            <h1 class="logoName"> UG Cake Shops</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#banner">Offer</a>
+            <a href="#product">product</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Delicious Cake for Everyone </h2>
+            <p>hoilch lavkar</p>
+            <div class="home-btn">
+                <a href="#product"><button>see more</button></a>
+            </div>  
+        </div>
+    </section>
+    <!-- home section end here  -->
+    <!--Banner section start-->
+    <section id="banner">
+        <div class="banner">
+        <script language="Javascript">MyBanners=new Array('chinmay1.jpeg','chinmay2.jpeg','chinmay3.jpeg')
+        banner=0
+        function ShowBanners()
+        { 
+            if (document.images)
+            { 
+                banner++
+                if (banner==MyBanners.length)
+                {
+                    banner=0
+                }
+                document.ChangeBanner.src=MyBanners[banner]
+                setTimeout("ShowBanners()",4000)
+            }
+        }
+        </script>
+        <img src="chinmay1.jpeg" width="55%" height="400" name="ChangeBanner" id="banner1">
+        </div>
+    </section>
+    <!--Banner section end-->
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div><!--1-->
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product1.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Strawberry</h3>
+                        <p>Strawberry Flavor Known for its bright pink and delicious sweetness and rich strawberry flavor.
+                        Who doesn’t love pink colored cake? If it is the birthday of your special someone who loves pink and
+                        fruits then go with this cake dosha puree which is made by fresh ripe strawberries.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div><!--2-->
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>The first choice of every Indian is without any doubt- Chocolate Cake. One of the most trending cake 
+                        flavours. No matter what age group you belong to, chocolate cake is a part of every celebration or event.
+                        There is nobody who can say no to a chocolate cake.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product1.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Blueberry</h3>
+                        <p>Are you confused between cake flavors? The taste of butterscotch is all the time stinging.
+                        Special ingredients like caramel drizzle,white chocolate, and butterscotch ganache make the 
+                        cake more crunchy and perfect for any occasion.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div><!--4-->
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product3.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Fruit cake</h3>
+                        <p>Once you taste the fresh fruit cake, you will surely crave more. Finely chopped fruits release
+                        blast flavors in the cake. Layered cake of chocolate layer, vanilla sponge layer with heavy top sliced ​
+                        ​fruit gives an appealing look.For vegetarians, it is one of the best tastes. The sweet-sour taste of the
+                        fruit makes it even more delicious.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div><!--5-->
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product4.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Pineapple</h3>
+                        <p>Among all the cakes, pineapple flavored cakes stand out in a row with chocolate cakes. For vegetarians, 
+                        the eggless pineapple cake is a special treat. Be it Birthday, Valentine’s Day or any other day, Pineapple 
+                        Cake is there to add a little sweetness to your relationship.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div><!--6-->
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product5.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Rasmalai</h3>
+                        <p>Rasmalai is a very special sweet for all of us. We all love the taste and feel of Rasmalai in 
+                        our mouth equally. So if we can get that feeling into a cake that would definitely be awesome.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div><!--7-->
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product6.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla</h3>
+                        <p>The second most loved cake flavors India. Vanilla is like a classic flavor because of its flavor and fragrance.
+                        Most Indians prefer vanilla cake to celebrate their special occasions be it birthday or anniversary. 
+                        You can easily find a lot of options in vanilla cake.In our Shop.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div><!--8-->
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./product7.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Kit Kat Cake</h3>
+                        <p>Every KitKat lover loves to eat KitKat at some point or another.
+                        So on their special days bring Kitkats to decorate their cakes and
+                        mix them on the festive cakes of your loved ones.</p>
+                        <div class="orderNow">
+                            <button onclick="order()">Order Now </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- product section end here  -->
+    <!-- newsletter section start here  -->
+    <section class="newsletter">
+        <form action="" name="form1">
+            <h3>subscribe for latest update and Discount</h3>
+            <input type="text" name="str" value="" placeholder="enter your email" id="" class="box"><br>
+            <input type="button" value="subscribe" class="box2" onclick="valid_email()">
+        </form>
+    </section>
+    <!-- newsletter section ends here  -->
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>client review</h2>
+        </div>
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Bhau Online payment chalu kar</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="./client1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Prasad Lonare</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Kaka 150 La deun taka</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="./client3.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Chinmay Chinchole</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Motha hava hota</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="./client3.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Omkar Avhad</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Bara hota</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="./client2.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Om Dhumal</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+    <!-- footer section start here  -->
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="" alt=""></a>
+                    <h1 class="logoName"> Sweet Cake </h1>
+                </div>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7330.782963000923!2d77.47278420000002!3d23.265220800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1695884188130!5m2!1sen!2sin" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#banner"> <i class="fas fa-arrow-right"></i>Offer</a>                
+                <a href="#product"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#review"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i>contact</a>
+            </div>
+            <div class="box">
+                <h3>Extra link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="https://api.whatsapp.com/send?phone=919423482859&text=Hello%20there!">+91 9423482859</a>
+                <a href="mailto:skumarmmr225@gmail.com"><i class="fas fa-envelope"></i>skumarmmr225@gmail.com</a>
+            </div>
+        </div>
+        <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/cakeshopdotcom" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/thecakeshop_company/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/cake-shop?originalSubdomain=in" class="fab fa-linkedin"></a>
+            <a href="https://in.pinterest.com/sulbhaptc/cake-shop/" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            created by <span>K K Wagh Polytechnic</span> |all rights reserved ! 
+        </div>
+    </footer>
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+</body>
+</html>
